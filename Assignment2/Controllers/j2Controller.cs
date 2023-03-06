@@ -7,8 +7,7 @@ using System.Web.Http;
 
 namespace Assignment2.Controllers
 {
-    public class J1Controller : ApiController
+    public class j2Controller : ApiController
     {
-    
     }
 }
