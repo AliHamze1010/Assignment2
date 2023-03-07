@@ -15,11 +15,12 @@ namespace Assignment2.Controllers
 
         totalCalories += GetBurgerCalories(burger);
         totalCalories += GetDrinkCalories(drink);
-        totalCalories += GetsideCalories(side);
+        totalCalories += GetSideCalories(side);
         totalCalories += GetDessertCalories(dessert);
 
         return $"Your total calorie count is {totalCalories}";
     }
+
     private int GetBurgerCalories(int burger)
     {
         if (burger == 1)
@@ -30,14 +31,12 @@ namespace Assignment2.Controllers
             return 420;
         else
             return 0;
-
     }
 
     private int GetDrinkCalories(int drink)
     {
         if (drink == 1)
             return 130;
-
         else if (drink == 2)
             return 160;
         else if (drink == 3)
@@ -48,35 +47,25 @@ namespace Assignment2.Controllers
 
     private int GetSideCalories(int side)
     {
-
-        if (side = 1) 
-
-            return 100;  
-        else if (side == 2) 
-            return 57; 
-        else if (side == 3) 
-            return 70; 
-
+        if (side == 1)
+            return 100;
+        else if (side == 2)
+            return 57;
+        else if (side == 3)
+            return 70;
         else
-            return 0
+            return 0;
     }
 
     private int GetDessertCalories(int dessert)
     {
-
-        if (dessert = 1) //Apple Pie
-
-            return 167; 
+        if (dessert == 1) //Apple Pie
+            return 167;
         else if (dessert == 2)
-            return 266; 
-
-        else if (dessert = 3) 
-
-            return 75; 
-        return 0;
+            return 266;
+        else if (dessert == 3)
+            return 75;
+        else
+            return 0;
     }
-
-   
-  
-}
 
